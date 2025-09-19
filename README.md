@@ -7,6 +7,11 @@ You can change background, ApiKey, etc. via customization menu.
 
 I recommend to create a shortcut to desktop
 
+## TODO:
+
+- Multi-language support
+- Interactable todo list?
+
 ## Customizations
 
 ### API URL:
