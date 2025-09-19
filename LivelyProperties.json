@@ -13,27 +13,27 @@
     "type": "folderDropdown",
     "value": "MakotoYuki.webm",
     "text": "Background",
-    "filter": "*.jpg|*.png|*.webm",
+    "filter": "*.jpg|*.png|*.webm|*.mp4",
     "folder": "media"
   },
   "vertbackground": {
     "type": "folderDropdown",
     "value": "MakotoYuki.webm",
     "text": "Vertical Background",
-    "filter": "*.jpg|*.png|*.webm",
+    "filter": "*.jpg|*.png|*.webm|*.mp4",
     "folder": "media"
   },
   "schedule": {
     "type": "folderDropdown",
     "value": "CodeBeta.png",
-    "text": "Schedule",
+    "text": "Image on the top left corner",
     "filter": "*.jpg|*.png",
     "folder": "media"
   },
   "beloved": {
     "type": "folderDropdown",
     "value": "Dynasties.png",
-    "text": "A beloved image for realize to your goal",
+    "text": "Image on the bottom left corner",
     "filter": "*.jpg|*.png",
     "folder": "media"
   }
