@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
+</head>
+<body>
+    <img id="wpI" src="media/GVLAJSiagAA8aaR.jpg" alt="" srcset="">
+    <video id="wpV" autoplay loop muted>
+        <source id="wpS" />
+        Your browser does not support the video tag.
+    </video> 
+    <div class="fix time">
+        <h1 id="time"></h1>
+        <p id="date"></p>
+    </div>
+    <div class="fix currency">
+        <div class="it ma">1 Lira şu anda:</div>
+        <div class="it usd">
+            <h1 id="usd"></h1>
+            <p>$</p>
+        </div>
+        <div class="it eur">
+            <h1 id="eur"></h1>
+            <p>€</p>
+        </div>
+        <div class="it jpy">
+            <h1 id="yen"></h1>
+            <p>¥</p>
+        </div>
+    </div>
+    <div class="fix dynasties" onmouseover="handleMouseOver(this, 25, -25)" onmouseout="handleMouseOut(this)">
+        <img src="media/Dynasties.png" id="beloved" alt="" srcset="">
+    </div>
+    <div class="fix program" onmouseover="handleMouseOver(this)" onmouseout="handleMouseOut(this)">
+        <img src="media/CodeBeta.png" id="schedule" alt="" srcset="">
+    </div>
+
+      <div class="fix weather">
+        <div class="sky">
+            <img id="forecast" src="https://openweathermap.org/img/wn/10d@2x.png">
+            <p id="description">Light Rain</p>
+        </div>
+        <div class="temp">
+            <p id="location">Gaziantep</p>
+            <h2 id="temperature"></h2>
+        </div>
+      </div>
+      <div class="fix todo">
+        <h1>Yapılacaklar:</h1>
+        <div id="todo">            
+            <!-- Simply set the `src` attribute to your MD file and win -->
+            <zero-md src="todo.md">
+                <template>
+                    <link rel="stylesheet" href="style.css">
+                </template>
+            </zero-md>
+            <p style="color: black; font-family: Arial, Helvetica, sans-serif;" id="ddd"></p>
+        </div>
+      </div>
+      <script src="js/index.js"></script>
+      <script>
+        function handleMouseOver(el, ratiox=25, ratioy=25) {
+            console.log("hovered");
+            el.style.transition = "all 0.3s ease-in-out";
+            el.style.transform = `scale(2) translate(${ratiox}%, ${ratioy}%)`;
+        }
+
+        function handleMouseOut(el) {
+            console.log("unhovered");
+            el.style.transform = "scale(1) translate(0, 0)";
+        }
+
+        
+    </script>
+
+</body>
+</html>

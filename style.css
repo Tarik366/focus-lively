@@ -1,0 +1,117 @@
+@font-face {
+    font-family: bmSpace;
+    src:url('BMspaceA9.ttf');
+    unicode-range: U+0000-036F, U+20A0-20C0;
+}
+@font-face {
+    font-family: DotGothic;
+    src:url('DotGothic16-Regular.ttf');
+    unicode-range: U+2E80-FFFD;
+}
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+video, #wpI {
+    height: 100vh;
+    width: 100vw;
+}
+.fix {
+    position: fixed;
+    color: #fff;
+    padding: 10px;
+    border-radius: 30px;
+    font-family: bmSpace, DotGothic;
+    letter-spacing: 2px;
+}
+.time {
+    bottom: 140px;
+    padding-inline: 30px;
+    right: 100px;
+    text-align: center;
+    font-size: 30pt;
+    height: 150px;
+}
+.time p {
+    font-size: 18pt;
+}
+.weather {
+    bottom: 600px;
+    padding-inline: 30px;
+    right: 100px;
+    display: flex;
+    bottom: 650px;
+    height: 150px;
+}
+.sky {
+    text-align: center;
+}
+.temp {
+    width: 170px;
+    text-align: right;
+    display: flex;
+    flex-direction: column-reverse;
+    float: right;
+}
+#location {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+}
+#temperature{
+    font-size: 40pt;
+    line-height: 100px;
+}
+.fix.currency {
+    bottom: 350px;
+    height: 250px;
+    right: 100px;
+    text-align: right;
+}
+.it {
+    display: flex;
+    line-height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    align-items: baseline;
+    padding-inline: inherit;
+    direction: rtl;
+}
+.it.ma {
+    direction: ltr;
+}
+#time {
+    line-height: 120px;
+}
+.fix.todo {
+    bottom: 100px;
+    height: 300px;
+    right: 600px;
+    width: 500px;
+    text-align: right;
+    font-size: 15pt;
+    font-family: bmSpace, DotGothic;
+}
+#wpV {
+    background-size: contain;
+}
+.dynasties {
+    bottom: 10px;
+}
+.dynasties img {
+    height: 300px;
+    width: auto;
+}
+.hover {
+    transition: all 0.3s ease-in-out;
+}
+.program {
+    top: 10px;
+    left: 10px;
+    & img {
+        height: 300px;
+        width: auto;
+    }
+}

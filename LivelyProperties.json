@@ -1,0 +1,40 @@
+{
+  "weatherapiurl": {
+    "text": "openweathermap.org API URL (get your own API key)",
+    "type": "textbox",
+    "value": "Your API Key"
+  },
+  "currency": {
+    "text": "The currency you want",
+    "type": "textbox",
+    "value": "try"
+  },
+  "background": {
+    "type": "folderDropdown",
+    "value": "MakotoYuki.webm",
+    "text": "Background",
+    "filter": "*.jpg|*.png|*.webm",
+    "folder": "media"
+  },
+  "vertbackground": {
+    "type": "folderDropdown",
+    "value": "MakotoYuki.webm",
+    "text": "Vertical Background",
+    "filter": "*.jpg|*.png|*.webm",
+    "folder": "media"
+  },
+  "schedule": {
+    "type": "folderDropdown",
+    "value": "CodeBeta.png",
+    "text": "Schedule",
+    "filter": "*.jpg|*.png",
+    "folder": "media"
+  },
+  "beloved": {
+    "type": "folderDropdown",
+    "value": "Dynasties.png",
+    "text": "A beloved image for realize to your goal",
+    "filter": "*.jpg|*.png",
+    "folder": "media"
+  }
+}
