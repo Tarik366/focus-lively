@@ -154,7 +154,7 @@ addEventListener('zero-md-rendered', (e) => {
         if (document.getElementsByClassName('markdown-body')[0].innerText.trim() == "") {
             document.getElementsByClassName('markdown-body')[0].innerText = `Click here for edit`;
         }
-        var todoArea = document.getElementsByClassName('markdown-body')[0].innerText.replace('\n', '<br>');
+        var todoArea = document.getElementsByClassName('markdown-body')[0].innerText.replace(/\n\n/gm, '<br>');
         localStorage.setItem("todo", todoArea);
     });
 });

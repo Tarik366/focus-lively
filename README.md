@@ -12,6 +12,14 @@ I recommend to create a shortcut to desktop
 - [ ] Multi-language support
 - [x] Interactable todo list?
 
+## Interactable todo list
+
+Close desktop icons when editting
+
+It stores data in local storage, so data will not shared with other wallpapers
+
+
+
 ## Customizations
 
 ### API URL:
