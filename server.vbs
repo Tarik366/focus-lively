@@ -1,1 +1,0 @@
-CreateObject("Wscript.Shell").Run "python -m http.server",0,True
