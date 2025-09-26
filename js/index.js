@@ -146,18 +146,23 @@ curUpdate = setInterval(function(){
 // todo edit area   
 addEventListener('zero-md-rendered', (e) => {
     document.getElementsByClassName('markdown-body')[0].setAttribute('contenteditable', 'true');
+    document.getElementsByClassName('markdown-body')[0].setAttribute('spellcheck', 'false');
+
+    // save edits in todo.md
+
+    document.getElementsByClassName('markdown-body')[0].addEventListener("input", function () {
+        if (document.getElementsByClassName('markdown-body')[0].innerText.trim() == "") {
+            document.getElementsByClassName('markdown-body')[0].innerText = `Click here for edit`;
+        }
+        var todoArea = document.getElementsByClassName('markdown-body')[0].innerText.replace('\n', '<br>');
+        localStorage.setItem("todo", todoArea);
+    });
 });
 
 // load edits from localstorage
 window.onload = function() {
     document.getElementById("todo-text").innerText = localStorage.getItem("todo") || `Click here for edit`;
 
-    // save edits in todo.md
-
-    document.getElementsByClassName('markdown-body')[0].addEventListener("input", function () {
-        var todoArea = document.getElementsByClassName('markdown-body')[0].innerText;
-        localStorage.setItem("todo", todoArea);
-    });
 }
 
 
