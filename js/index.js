@@ -142,3 +142,22 @@ curUpdate = setInterval(function(){
     chr.open('GET', kurApiUrl);
     chr.send();
 }, 600000);
+
+// todo edit area   
+addEventListener('zero-md-rendered', (e) => {
+    document.getElementsByClassName('markdown-body')[0].setAttribute('contenteditable', 'true');
+});
+
+// load edits from localstorage
+window.onload = function() {
+    document.getElementById("todo-text").innerText = localStorage.getItem("todo") || `Click here for edit`;
+
+    // save edits in todo.md
+
+    document.getElementsByClassName('markdown-body')[0].addEventListener("input", function () {
+        var todoArea = document.getElementsByClassName('markdown-body')[0].innerText;
+        localStorage.setItem("todo", todoArea);
+    });
+}
+
+

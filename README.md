@@ -9,8 +9,8 @@ I recommend to create a shortcut to desktop
 
 ## TODO:
 
-- Multi-language support
-- Interactable todo list?
+- [ ] Multi-language support
+- [x] Interactable todo list?
 
 ## Customizations
 
