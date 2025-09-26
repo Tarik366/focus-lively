@@ -5,6 +5,12 @@ A minimalistic live wallpaper to help your focus.
 
 You can change background, ApiKey, etc. via customization menu.
 
+## Usage:
+
+Just download as zip and drag and drop on lively wallpaper.
+
+For updates, you can watch repo or `git remote add main https://github.com/Tarik366/focus-lively.git` in wallpaper path (%APPDATA%\Lively Wallpaper\Library\wallpapers\random) 
+
 ## TODO:
 
 - [ ] Multi-language support
