@@ -5,8 +5,6 @@ A minimalistic live wallpaper to help your focus.
 
 You can change background, ApiKey, etc. via customization menu.
 
-I recommend to create a shortcut to desktop
-
 ## TODO:
 
 - [ ] Multi-language support
