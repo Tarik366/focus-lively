@@ -39,7 +39,7 @@ function changeDirection(x) {
 function livelyPropertyListener(name, val) {
     switch (name) {
         case "background":
-            if (val.split('.').pop() == "webm") {
+            if (val.split('.').pop() == "webm" || val.split('.').pop() == "mkv" || val.split('.').pop() == "mp4") {
                 vi.style.display = "block";
                 image.style.display = "none";
                 video.src = val;
