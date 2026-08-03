@@ -36,5 +36,36 @@
     "text": "Image on the bottom left corner",
     "filter": "*.jpg|*.png",
     "folder": "media"
+  },
+  "showtodo": {
+    "type": "checkbox",
+    "value": true,
+    "text": "Show Todo"
+  },
+  "showtime": {
+    "type": "checkbox",
+    "value": true,
+    "text": "Show Time"
+  },
+  "showcurrency": {
+    "type": "checkbox",
+    "value": true,
+    "text": "Show Currency"
+  },
+  "showweather": {
+    "type": "checkbox",
+    "value": true,
+    "text": "Show Weather"
+  },
+  "aspect_ratio": {
+    "type": "textbox",
+    "value": "16 / 9",
+    "text": "Aspect Ratio of video"
+  },
+  "object_fit": {
+    "type": "dropdown",
+    "value": 1,
+    "text": "Object fitting of video",
+    "items": ["contain", "cover", "fill", "none", "scale-down"]
   }
 }

@@ -30,11 +30,11 @@
         <source id="wpS" />
         Your browser does not support the video tag.
     </video> 
-    <div class="fix time">
+    <div class="fix time" id="stime">
         <h1 id="time"></h1>
         <p id="date"></p>
     </div>
-    <div class="fix currency">
+    <div class="fix currency" id="scurrency">
         <div class="it ma">1 Lira şu anda:</div>
         <div class="it usd">
             <h1 id="usd"></h1>
@@ -56,7 +56,7 @@
         <img src="media/CodeBeta.png" id="schedule" alt="" srcset="">
     </div>
 
-      <div class="fix weather">
+      <div class="fix weather" id="sweather">
         <div class="sky">
             <img id="forecast" src="https://openweathermap.org/img/wn/10d@2x.png">
             <p id="description">Light Rain</p>
@@ -66,7 +66,7 @@
             <h2 id="temperature"></h2>
         </div>
       </div>
-      <div class="fix todo">
+      <div class="fix todo" id="stodo">
         <h1>Yapılacaklar:</h1>
         <div id="todo">            
             <!-- Simply set the `src` attribute to your MD file and win -->
@@ -83,13 +83,11 @@
       <script src="js/index.js"></script>
       <script>
         function handleMouseOver(el, ratiox=25, ratioy=25) {
-            console.log("hovered");
             el.style.transition = "all 0.3s ease-in-out";
             el.style.transform = `scale(2) translate(${ratiox}%, ${ratioy}%)`;
         }
 
         function handleMouseOut(el) {
-            console.log("unhovered");
             el.style.transform = "scale(1) translate(0, 0)";
         }
 

@@ -60,12 +60,34 @@ function livelyPropertyListener(name, val) {
             beloved.src = val;
             break;
         case "weatherapiurl":
-            console.log(val);
             apiUrl = val;
             break;
         case "currency":
             currency = val;
             break;
+        case "showtodo":
+            const stodo = document.getElementById("stodo");
+            stodo.style.display = !val ? "none" : "block";
+            break;
+        case "showtime":
+            const stime = document.getElementById("stime");
+            stime.style.display = !val ? "none" : "block";
+            break;
+        case "showcurrency":
+            const scurrency = document.getElementById("scurrency");
+            scurrency.style.display = !val ? "none" : "block";
+            break;
+        case "showweather":
+            const sweather = document.getElementById("sweather");
+            sweather.style.display = !val ? "none" : "block";
+            break;
+        case "aspect_ratio":
+            vi.style.aspectRatio = val;
+            break;
+        case "object_fit":
+            vi.style.objectFit = ["contain", "cover", "fill", "none", "scale-down"][val];
+            break;
+
     }
 }
 // Create a MediaQueryList object
@@ -101,7 +123,6 @@ function capitalizeFirstLetter(string) {
 xhr.onreadystatechange = function() {
     if (xhr.readyState === XMLHttpRequest.DONE) {
         if (xhr.status === 200) {
-            console.log(xhr);
             const response = JSON.parse(xhr.responseText);
             forecast.src = `https://openweathermap.org/img/wn/${response.weather[0].icon}@2x.png`;
             description.innerHTML = capitalizeFirstLetter(response.weather[0].description);
