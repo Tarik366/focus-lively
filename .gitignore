@@ -1,2 +1,4 @@
-media/CodeBeta.png
+media/*
 *.zip
+*.jpg
+*.gif
